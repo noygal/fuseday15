@@ -1,0 +1,30 @@
+{
+  "name": "fuseday15",
+  "version": "1.0.0",
+  "description": "Team awesome fuse day UI project.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.0",
+    "gulp": "^3.8.11",
+    "gulp-express": "^0.1.13",
+    "restler": "^3.2.2"
+  },
+  "devDependencies": {
+    "gulp-express": "^0.1.13",
+    "restler": "^3.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://noygal@github.com/noygal/fuseday15.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noygal/fuseday15/issues"
+  },
+  "homepage": "https://github.com/noygal/fuseday15"
+}

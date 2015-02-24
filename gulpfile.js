@@ -6,7 +6,7 @@ gulp.task('server', function () {
     server.run(['server.js']);
 
     // Restart the server when file changes
-    gulp.watch(['./public/**/*.*'], server.notify);
+    gulp.watch(['**/*.js'], server.notify);
 });
 
 gulp.task('default', ['server']);

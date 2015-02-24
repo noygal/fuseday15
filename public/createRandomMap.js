@@ -60,7 +60,8 @@ function getRandomInt(min, max) {
 $(document).ready(function(){
 	createCanvas(function(){
 		// var points = createRandomObj();
-		$.getJSON('api/points', function(points) {
+		$.getJSON('api/points', function(res) {
+			var points = JSON.parse(res);
 			drawPoints(points);
 		});
 	});
