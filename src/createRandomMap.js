@@ -7,13 +7,13 @@ var createRandomObj = function(){
 	console.log(JSON.stringify(mapObj));
 
 	var canvas = $('#myCanvas');
-	var context = canvas.getContext('2d');
+	var context = canvas[0].getContext('2d');
 	var imageObj = new Image();
 
 	imageObj.onload = function() {
-	    context.drawImage(imageObj, 69, 50);
+	    context.drawImage(imageObj, 0, 0);
 	};
-	imageObj.src = 'im/worldmap.jpg';
+	imageObj.src = 'img/worldmap.jpg';
 	return mapObj;
 }
 
@@ -26,5 +26,3 @@ function getRandomInt(min, max) {
 $(document).ready(function(){
 	createRandomObj();
 })
-
-
