@@ -4,7 +4,7 @@ var height = 360;
 var createRandomObj = function(){
 	var mapObj = [];
 	for(var i=0; i<100; i++){
-		mapObj.push([getRandomInt(-180, 180), getRandomInt(-90, 90), getRandomInt(0, 10)]);
+		mapObj.push([getRandomInt(-180, 180), getRandomInt(-90, 90), getRandomInt(0, 9)]);
 	}
 	return mapObj;
 }
@@ -22,17 +22,16 @@ function createCanvas(callback) {
 }
 
 var colorMap = [
-	'#000000',
-	'#000000',
-	'#000000',
-	'#000000',
-	'#000000',
-	'#000000',
-	'#000000',
-	'#000000',
-	'#000000',
-	'#000000',
-	'#000000'
+	'#00FF00',
+	'#55FF00',
+	'#AAFF00',
+	'#D4FF00',
+	'#FFFF00',
+	'#FFAA00',
+	'#FF7F00',
+	'#FF5500',
+	'#FF2A00',
+	'#FF0000'
 ];
 
 function drawPoints(points) {
