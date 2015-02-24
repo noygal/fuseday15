@@ -1,9 +1,9 @@
-var width = 720;
-var height = 360;
+var width = window.innerWidth;
+var height = window.innerHeight;
 
 var createRandomObj = function(){
 	var mapObj = [];
-	for(var i=0; i<100; i++){
+	for(var i=0; i<10000; i++){
 		mapObj.push([getRandomInt(-180, 180), getRandomInt(-90, 90), getRandomInt(0, 9)]);
 	}
 	return mapObj;
@@ -11,6 +11,8 @@ var createRandomObj = function(){
 
 function createCanvas(callback) {
 	var canvas = $('#myCanvas');
+	canvas.attr("height", height);
+	canvas.attr("width", width);
 	var context = canvas[0].getContext('2d');
 	var imageObj = new Image();
 
